@@ -1,89 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
-.main {
-    width: 100%;
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
-.header {
-    width: 100%;
-    height: 10%;
+
+.signup-container {
     display: flex;
-    align-items: center;
-    position: absolute;
-    
+    width: 800px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-.header p {
-    font-family: "pirata one";
-    font-size: 30px;
-    margin-left: 25px;
-}
-.body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-}
-.login-div{
-    width: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    overflow: hidden;
-}
-.login-div h2{
-    font-weight: 900;
-    font-size: 30px;
-}
-.login-div p{
-    width: 60%;
-    text-align: center;
-}
-.login-div form {
-    background-color: chartreuse;
-}
-.form-control {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-.form-control input{
-    padding: 5px;
-}
-.check {
-    margin-top: 10px;
-    display: flex;
-    white-space: nowrap;
-}
-.login-div form input[type=submit] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 10px;
-}
-.switch-signup{
-    width: 0;
-    height: 100%;
-    background-color: blue;
-    transform: skew(10deg) translateX(100px);
-    overflow: hidden;
-}
-.switch-login{
-    height: 100%;
-    width: 50%;
-    background-color: #3556db;
+
+.left-panel {
+    width: 40%;
+    background: #0dac30;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 40px 20px;
     color: white;
-    transform: skew(-10deg) translateX(-100px);
+}
+
+.left-panel ul {
+    list-style: none;
+}
+
+.left-panel li {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
-    text-align: center;
+    margin-bottom: 70px;
+}
+
+.check-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 100px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 40px 20px;
+}
+
+.right-panel h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-form .input-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0dac30;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #0dac30;
 }

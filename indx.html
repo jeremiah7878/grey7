@@ -4,58 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
+    <link rel="stylesheet" href="styl.css">
 </head>
-<link rel="stylesheet" href="styl.css">
 <body>
-    <div class="main">
-        <div class="rightimg">
-            <img src="" alt="">
+    <div class="payment-container">
+        <div class="header">
+            <h2>Last step!</h2>
+            <p>Enter your payment info below.</p>
         </div>
-        <div class="rightpart">
-            <div class="righttext"> 
-                <h2>Last Step!</h2>
-                <p>Enter your payment info below.</p>
+        <form class="payment-form">
+            <div class="payment-options">
+                <label>
+                    <input type="radio" name="payment-method" checked>
+                    <span class="credit-card">Credit Card</span>
+                </label>
+                <label>
+                    <input type="radio" name="payment-method">
+                    <span class="paypal">PayPal</span>
+                </label>
             </div>
-            <div class="righticons">
-                <div class="creditcardicon">
-                    <img src="" alt="">
-                    <h3>credit card</h3>
-                    <img src="" alt="">
-                </div>
-                <div class="paypalicon">
-                    <img src="" alt="">
-                    <div></div>
-                </div>
-            </div>
-            <div class="rightcardnumber">
-                <form action="">
-                    <label for="">Card number</label>
-                    <p><input type="number" name="" id=""></p>
-                </form>
-            </div>
-            <div class="CVCEXPIRATION">
-                    <div>
-                        <form class="form-control"></form>
-                        <label for="">Expiration date</label>
-                        <p><input type="text" name="" id="" class="Thename"></p>
-                    </div>
-                    <div>
-                        <form class="form-control"></form>
-                        <p><input type="text" name="" id="" class="Aname"></p>
-                    </div>
-                    <div>
-                        <form class="form-control"></form>
-                        <label for="">CVC</label>
-                        <p><input type="text" name="" id="" class="Dname"></p>
-                    </div>
-            </div>
-            <p class="textnear">By creating an account you agree to study com's Terms of use and privacy policy</p>
-            <div>
-                <button class="JoinNowButton">Join Now</button>
-            </div>
-        </div>
 
+            <div class="input-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9123 3456">
+            </div>
+
+            <div class="input-group">
+                <label for="expiration-date">Expiration Date</label>
+                <div class="expiration-inputs">
+                    <select id="exp-month">
+                        <option>Month</option>
+                    
+                    </select>
+                    <select id="exp-day">
+                        <option>Day</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123">
+            </div>
+
+            <button type="submit" class="submit-btn">Join Now</button>
+            <p class="terms">By creating an account, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+        </form>
     </div>
-    
 </body>
 </html>
